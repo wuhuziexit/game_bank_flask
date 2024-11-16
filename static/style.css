@@ -1,0 +1,95 @@
+/* 全局样式 */
+*{
+    font-family: "楷体", Arial, sans-serif;
+}
+body {
+    font-family: "楷体", Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box; /* 确保内边距不会增加输入框的总宽度 */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5cb85c; /* 按钮颜色 */
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* 错误提示样式 */
+p {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 注册按钮样式 */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+input[type="submit"], button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #337ab7;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #286090;
+}
+
+th, tr, td {
+    text-align: center;
+}
+
+table, th, tr, td {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    border-collapse: collapse;
+    /*padding: 10px;*/
+}
+
+table {
+    margin: 1px 0 20px 0;
+}
+
+.main-form h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+table button, input, a {
+    margin: 1px;
+}

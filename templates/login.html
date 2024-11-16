@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='form.css') }}">
+</head>
+<body>
+    <form class="form-login" action="/login" method="post">
+        <label for="username">用户名:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required>
+        <br><p>{{hint}}</p>
+        <button type="submit">登陆</button>
+        <a href="{{ url_for("registration") }}"><button type="button">注册</button></a>
+    </form>
+</body>
+</html>

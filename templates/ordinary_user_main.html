@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>普通用户界面</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<form class="main-form" action="{{ url_for("ordinary.ordinary_main_submit") }}" method="post">
+    <h3>欢迎您，{{ ordinary_main_temp["username"] }}</h3>
+    <input placeholder="请输入存取的金额" type="number" name="money">
+    <p>{{ ordinary_main_temp["hint"] }}</p>
+    <button type="submit" name="but" value="sava_money">存钱</button>
+    <button type="submit" name="but" value="get_money">取钱</button>
+    <button type="submit" name="but" value="query_yue">查询余额</button>
+    <a href="{{ url_for("ordinary.ordinary_transactions") }}"><button type="button">查看流水</button></a>
+    <button type="submit" name="but" value="exit">退出</button>
+</form>
+</body>
+</html>
